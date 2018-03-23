@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   
-  /* Общие / преобладающие параметры шрифтов для всей страницы  */
+  /* РћР±С‰РёРµ / РїСЂРµРѕР±Р»Р°РґР°СЋС‰РёРµ РїР°СЂР°РјРµС‚СЂС‹ С€СЂРёС„С‚РѕРІ РґР»СЏ РІСЃРµР№ СЃС‚СЂР°РЅРёС†С‹  */
   font-weight: normal;
   font-size: 14px;
   line-height: normal;
@@ -77,9 +77,9 @@ body {
   /* font-family: "Arial", sans-serif; */
   /* font-family: "Open Sans", "Arial", sans-serif; */
 
-  /*Если в блоке задаём цвет фона, то сразу надо задать контрастный цвет текста.*/
+  /*Р•СЃР»Рё РІ Р±Р»РѕРєРµ Р·Р°РґР°С‘Рј С†РІРµС‚ С„РѕРЅР°, С‚Рѕ СЃСЂР°Р·Сѓ РЅР°РґРѕ Р·Р°РґР°С‚СЊ РєРѕРЅС‚СЂР°СЃС‚РЅС‹Р№ С†РІРµС‚ С‚РµРєСЃС‚Р°.*/
   color: rgba(0,0,0,0.8);
-  /*Зададим странице задний фон. Не забываем указать не только изображение, но и цвет фона.*/
+  /*Р—Р°РґР°РґРёРј СЃС‚СЂР°РЅРёС†Рµ Р·Р°РґРЅРёР№ С„РѕРЅ. РќРµ Р·Р°Р±С‹РІР°РµРј СѓРєР°Р·Р°С‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РёР·РѕР±СЂР°Р¶РµРЅРёРµ, РЅРѕ Рё С†РІРµС‚ С„РѕРЅР°.*/
   background: #ffffff url("../img/body-   bg.jpg") no-repeat center top;
 }
 
@@ -135,7 +135,7 @@ body {
   /* height: 65px; */
   height: auto;
   /* height: 100%; */
-  /* підсвітка логотипу */
+  /* РїС–РґСЃРІС–С‚РєР° Р»РѕРіРѕС‚РёРїСѓ */
   /* background-color: rgba(230,100,60,1.0); */
 }
 
@@ -703,7 +703,7 @@ body {
 }
 
 .left-column__banner::before {
-  content: "Банер 300*100";
+  content: "Р‘Р°РЅРµСЂ 300*100";
 }
 
 @media (min-width: 768px) {
@@ -713,7 +713,7 @@ body {
   }
   
   .left-column__banner::before {
-    content: "Банер 728*90";
+    content: "Р‘Р°РЅРµСЂ 728*90";
   }
 }
 
@@ -724,7 +724,7 @@ body {
   }
   
   .left-column__banner::before {
-    content: "Банер 150*600";
+    content: "Р‘Р°РЅРµСЂ 150*600";
   }
 }
 
@@ -868,23 +868,14 @@ body {
 .promo__title {
   margin: 0;
   padding: 0;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.promo__title a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid #cccccc;
-}
-
-.promo__title a:hover {
-  color: rgba(0,0,0,1.0);
-  border-bottom: 1px solid rgba(0,0,0,0.7);
+  font-size: 14px;
+  line-height: 22px;
 }
 
 @media (min-width: 768px) {
   .promo__title {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -893,24 +884,36 @@ body {
   }
 }
 
+.promo__title a {
+  color: inherit;
+  text-decoration: none;
+  /* border-bottom: 1px solid #cccccc; */
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.promo__title a:hover {
+  color: rgba(0,0,0,1.0);
+  border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+
 .promo__composition {
-  line-height: 20px;
+  /* line-height: 20px; */
   font-weight: bold;
 }
 
 .promo__authors {
-  line-height: 20px;
+  /* line-height: 20px; */
   font-weight: normal;
 }
 
 @media (min-width: 768px) {
   .promo__composition {
-    font-size: 18px;
-    line-height: 22px;
+    /* font-size: 18px; */
+    /* line-height: 22px; */
   }
   
   .promo__authors {
-    line-height: 22px;
+    /* line-height: 22px; */
   }
 }
 
@@ -937,7 +940,7 @@ body {
 .titles__list li,
 .releases__list li {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 @media (min-width: 768px) {
@@ -946,56 +949,34 @@ body {
   .names__list li,
   .titles__list li,
   .releases__list li {
-    margin:  0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 }
 
-.compositions__list time {
+.compositions__list time,
+.compositions__list .compositions__date {
   font-size: 13px;
   color: rgba(0,0,0,0.5);
 }
 
-@media (min-height: 768px) {
-  .compositions__list time {
-    font-size: 14px;
-  }
-}
-
-.composition__title {
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.composition__title a {
-  text-decoration: none;
-  font-size: inherit;
-  color: inherit;
-  text-decoration: none;
-}
-
-.composition__title a:hover  {
-  color: rgba(0,0,0,1.0);
-  border-bottom: 1px solid rgba(0,0,0,0.7);
-}
-
 @media (min-width: 768px) {
-  .composition__title {
-    font-size: 18px;
+  .compositions__list time,
+  .compositions__list .compositions__date {
+    font-size: 15px;
   }
 }
 
+.compositions__list b,
 .compositions__list .compositions__title {
   font-weight: normal;
 }
 
 .compositions__list a,
+.types__list a,
 .names__list a,
 .titles__list a,
 .releases__list a {
-  font-size: inherit;
+  font-size: 14px;
   line-height: 22px;
   color: inherit;
   text-decoration: none;
@@ -1003,7 +984,18 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+@media (min-width: 768px) {
+  .compositions__list a,
+  .names__list a,
+  .titles__list a,
+  .releases__list a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .compositions__list a:hover,
+.types__list a:hover,
 .names__list a:hover,
 .titles__list a:hover,
 .releases__list a:hover {
@@ -1014,15 +1006,6 @@ body {
 .releases__list a:hover .compositions__date,
 .compositions__list a:hover .compositions__date {
   color: rgba(0,0,0,0.7);
-}
-
-@media (min-width: 768px) {
-  .compositions__list a,
-  .names__list a,
-  .titles__list a,
-  .releases__list a {
-    line-height: 22px;
-  }
 }
 
 .the-end {
@@ -1058,7 +1041,7 @@ body {
 }
 
 .page-main__banner::before {
-  content: "Банер 300*100";
+  content: "Р‘Р°РЅРµСЂ 300*100";
 }
 
 @media (min-width: 768px) {
@@ -1068,7 +1051,7 @@ body {
     
   }
   .page-main__banner::before {
-    content: "Банер 468*60";
+    content: "Р‘Р°РЅРµСЂ 468*60";
   }
 }
 
@@ -1090,8 +1073,8 @@ body {
   margin: 0;
   margin-bottom: 14px;
   padding-bottom: 56.25%; 
-  /* задаёт высоту контейнера для 16:9 */
-  /* задаёт высоту контейнера для 4:3 */ 
+  /* Р·Р°РґР°С‘С‚ РІС‹СЃРѕС‚Сѓ РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ 16:9 */
+  /* Р·Р°РґР°С‘С‚ РІС‹СЃРѕС‚Сѓ РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ 4:3 */ 
   /* padding-bottom: 75%; */
   /* padding-top: 30px; */
   height: 0;
@@ -1122,29 +1105,19 @@ body {
 .release__picture {
   width: 300px;
   height: 300px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .release__picture {
+    margin-bottom: 16px;
+  }
 }
 
 .release__picture img {
   width: 300px;
   height: 300px;
 }
-
-.composition__lyric {
-  margin: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  
-  border-bottom: 1px solid #cccccc;
-}
-
-@media (min-width: 768px) {
-  .composition__lyric {
-  }
-}
-
-
-
 
 .composition__info,
 .composition__release,
@@ -1157,7 +1130,8 @@ body {
 }
 
 .composition__info,
-.composition__release {
+.composition__release,
+.composition__lyric {
   border-bottom: 1px solid #cccccc;
 }
 
@@ -1172,11 +1146,29 @@ body {
   }
 }
 
-.composition__info .composition__title,
-.release__info .release__title {
+/* .composition__title { */
+  /* margin: 0; */
+  /* margin-bottom: 16px; */
+  /* font-size: 16px; */
+  /* line-height: 22px; */
+/* } */
+
+/* .composition__title a { */
+  /* text-decoration: none; */
+  /* font-size: inherit; */
+  /* color: inherit; */
+  /* text-decoration: none; */
+/* } */
+
+/* .composition__title a:hover  { */
+  /* color: rgba(0,0,0,1.0); */
+  /* border-bottom: 1px solid rgba(0,0,0,0.7); */
+/* } */
+
+.composition__title,
+.release__title {
   margin: 0;
-  /* margin-top: 14px; */
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -1185,12 +1177,10 @@ body {
   color: inherit;
 }
 
-
 @media (min-width: 768px) {
-  .composition__info .composition__title,
-  .release__info .release__title {
-    /* margin-top: 16px; */
-    margin-bottom: 8px;
+  .composition__title,
+  .release__title {
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -1198,22 +1188,27 @@ body {
 
 .composition__reating {
   margin: 0;
+  margin-top: 8px;
+  margin-bottom: 4px;
   color: rgba(0,0,0,0.5);
-  
 /*  border-bottom: 1px solid #cccccc;*/
+}
+
+.composition__reating img {
+  width: 168px;
+  height: 22px;
+}
+
+@media (min-width: 768px) {
+  .composition__reating {
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
 }
 
 .reating__number {
   font-weight: normal;
   color: rgba(0,0,0,0.7);
-}
-
-@media (min-width: 768px) {
-  .composition__reating {
-  }
-
-  .reating__number {
-  }
 }
 
 .composition__subject,
@@ -1231,11 +1226,6 @@ body {
 
 .composition__subject {
   margin-top: 16px;
-}
-
-.composition__performer {
-  /* font-weight: bold; */
-  margin-top: 4px;
 }
 
 @media (min-width: 768px) {
@@ -1256,7 +1246,7 @@ body {
 .composition__author a,
 .composition__data a,
 .releas__data a {
-  display: inline-block;
+  /* display: inline-block; */
   color: inherit;
   /* color: #0d5980; */
   text-decoration: none;
@@ -1338,7 +1328,7 @@ body {
 
 .lyric .lyric__end {
   margin-top: 16px;
-  margin-bottom: 16px; 
+  /* margin-bottom: 16px;  */
 }
 
 .right-column {
@@ -1481,7 +1471,7 @@ body {
 }
 
 .right-column__banner::before {
-  content: "Банер 300*100";
+  content: "Р‘Р°РЅРµСЂ 300*100";
 }
 
 @media (min-width: 768px) {
@@ -1491,7 +1481,7 @@ body {
   }
   
   .right-column__banner::before {
-    content: "Банер 240*400";
+    content: "Р‘Р°РЅРµСЂ 240*400";
   }
 }
 
