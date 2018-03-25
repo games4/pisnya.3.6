@@ -1,4 +1,3 @@
-/*
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -6,10 +5,12 @@
   src: 
     local("PT Sans"), 
     local("PTSans-Regular"),
-    url("../fonts/roboto-regular.woff2") format("woff2"),
-    url("../fonts/roboto-regular.woff") format("woff");
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff"),
+    url("https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic");
+;
 }
-*/
+
 /*
 @font-face {
   font-family: "PT Sans";
@@ -22,7 +23,7 @@
     url("../fonts/roboto-italic.woff") format("woff");
 }
 */
-/*
+
 @font-face {
   font-family: "PT Sans";
   font-style: bold;
@@ -30,13 +31,12 @@
   src: 
     local("PT Sans Bold"), 
     local("PTSans-Bold"),
-    url("../fonts/roboto-bold.woff2") format("woff2"),
-    url("../fonts/roboto-bold.woff") format("woff");
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic");
 }
-*/
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
-/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=cyrillic'); */
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic'); */
 
 .none {
   display: none;
@@ -100,6 +100,7 @@ body {
 
 .page-header__top {
   padding: 0;
+  /* background-color вкінці style.css */
   background-color: rgba(230,0,60,1.0);
 }
 
@@ -662,7 +663,7 @@ body {
   margin: 0 10px;
   padding: 0;
   
-  background-color: #faf5f7;
+  /* background-color: #faf5f7; */
 }
 
 @media (min-width: 768px) {
@@ -698,12 +699,11 @@ body {
   text-align: center;
   
   background-color: #c42482;
-  /* background-image: linear-gradient(222deg, #ff272d 0, #c42482 33%, #ab217f 47%, #671878 84%, #4a1475 100%); */
-  background-image: linear-gradient(222deg, #ff272d 0, #c42482 25%, #ab217f 50%, #671878 75%, #4a1475 100%);
+  background-image: linear-gradient(222deg, #ff272d 0, #c42482 40%, #ab217f 60%, #671878 80%, #4a1475 100%);
 }
 
 .left-column__banner::before {
-  content: "Банер 300*100";
+  /* content: "Банер 300*100"; */
 }
 
 @media (min-width: 768px) {
@@ -713,7 +713,7 @@ body {
   }
   
   .left-column__banner::before {
-    content: "Банер 728*90";
+    /* content: "Банер 728*90"; */
   }
 }
 
@@ -724,7 +724,7 @@ body {
   }
   
   .left-column__banner::before {
-    content: "Банер 150*600";
+    /* content: "Банер 150*600"; */
   }
 }
 
@@ -785,10 +785,6 @@ body {
   line-height: 24px;
 }
 
-.release .page__title {
-  /* margin-bottom: 9px; */
-}
-
 .page__description {
   margin: 0;
   margin-bottom: 32px;
@@ -798,10 +794,6 @@ body {
   .page__title {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .release .page__title {
-    /* margin-bottom: 10px; */
   }
 
   .page__description {
@@ -855,10 +847,6 @@ body {
   height: 100px;
 }
 
-.promo__icon a {
-  font-size: 0;
-}
-
 .promo__icon img {
   width: 100px;
   height: 100px;
@@ -876,11 +864,6 @@ body {
   .promo__title {
     font-size: 16px;
     line-height: 24px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .promo__title {
   }
 }
 
@@ -1037,11 +1020,11 @@ body {
   text-align: center;
   
   background-color: #c42482;
-  background-image: linear-gradient(to bottom, rgb(0, 62, 170) 40%, rgb(0, 78, 194) 60%, rgb(0, 96, 223) 80%, rgb(0, 128, 255) 90%, rgb(0, 199, 255) 100%);
+  background-image: linear-gradient(to bottom, rgb(0, 62, 170) 20%, rgb(0, 78, 194) 40%, rgb(0, 96, 223) 60%, rgb(0, 128, 255) 80%, rgb(0, 199, 255) 100%);
 }
 
 .page-main__banner::before {
-  content: "Банер 300*100";
+  /* content: "Банер 300*100"; */
 }
 
 @media (min-width: 768px) {
@@ -1051,7 +1034,7 @@ body {
     
   }
   .page-main__banner::before {
-    content: "Банер 468*60";
+    /* content: "Банер 468*60"; */
   }
 }
 
@@ -1066,6 +1049,43 @@ body {
   .release {
     min-width: 480px;
   }
+}
+
+.release__info {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 21px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .release__info {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+.release__picture {
+  padding-right: 20px;
+  /* float: left; */
+}
+
+.release__picture {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .release__picture {
+    margin-bottom: 16px;
+  }
+}
+
+.release__picture img {
+  width: 300px;
+  height: 300px;
 }
 
 .composition__video {
@@ -1096,74 +1116,25 @@ body {
   height: 100%;
 }
 
-.composition__image,
-.release__picture {
-  padding-right: 20px;
-  /* float: left; */
-}
-
-.release__picture {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 14px;
-}
-
-@media (min-width: 768px) {
-  .release__picture {
-    margin-bottom: 16px;
-  }
-}
-
-.release__picture img {
-  width: 300px;
-  height: 300px;
-}
-
 .composition__info,
-.composition__release,
-.composition__lyric,
-.release__info {
+.composition__lyric {
   margin: 0;
   margin-top: 14px;
-  padding-bottom: 20px;
+  margin-bottom: 14px;
+  padding-bottom: 21px;
   font-size: 14px;
-}
-
-.composition__info,
-.composition__release,
-.composition__lyric {
   border-bottom: 1px solid #cccccc;
 }
 
 @media (min-width: 768px) {
   .composition__info,
-  .composition__release,
-  .composition__lyric,
-  .release__info {
+  .composition__lyric {
     font-size: 16px;
     margin-top: 16px;
+    margin-bottom: 16px;
     padding-bottom: 24px;
   }
 }
-
-/* .composition__title { */
-  /* margin: 0; */
-  /* margin-bottom: 16px; */
-  /* font-size: 16px; */
-  /* line-height: 22px; */
-/* } */
-
-/* .composition__title a { */
-  /* text-decoration: none; */
-  /* font-size: inherit; */
-  /* color: inherit; */
-  /* text-decoration: none; */
-/* } */
-
-/* .composition__title a:hover  { */
-  /* color: rgba(0,0,0,1.0); */
-  /* border-bottom: 1px solid rgba(0,0,0,0.7); */
-/* } */
 
 .composition__title,
 .release__title {
@@ -1275,7 +1246,7 @@ body {
 .composition__label,
 .release__label {
   font-weight: bold;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.5);
 }
 
 .lyric .lyric__title {
@@ -1283,7 +1254,6 @@ body {
   /* margin-top: 32px;  */
   margin-bottom: 16px; 
   
-  font-size: 18px;
   font-size: 16px;
   font-weight: bold;
   color: rgba(0,0,0,0.8);
@@ -1329,6 +1299,53 @@ body {
 .lyric .lyric__end {
   margin-top: 16px;
   /* margin-bottom: 16px;  */
+}
+
+.composition__release {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .composition__release {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.release-promo {
+  min-height: 75px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .release-promo {
+    font-size: 16px;
+    padding-bottom: 16px;
+ }
+}
+
+.release-promo__picture {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  height: 75px;
+}
+
+.release-promo__picture img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.release-promo__info {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 10px;
 }
 
 .right-column {
@@ -1471,7 +1488,7 @@ body {
 }
 
 .right-column__banner::before {
-  content: "Банер 300*100";
+  /* content: "Банер 300*100"; */
 }
 
 @media (min-width: 768px) {
@@ -1481,7 +1498,7 @@ body {
   }
   
   .right-column__banner::before {
-    content: "Банер 240*400";
+    /* content: "Банер 240*400"; */
   }
 }
 
@@ -1504,6 +1521,7 @@ body {
 .page-footer__nav,
 .page-footer__bottom {
   margin: 0;
+  /* background-color вкінці style.css */
   background-color: rgba(230,0,60,1.0);
 }
 
@@ -1796,4 +1814,18 @@ body {
 .tools {
   display: none;
 }
+
+.page-header__top,
+.page-footer__top,
+.page-footer__nav,
+.page-footer__bottom,
+.left-column__banner,
+.right-column__banner {
+  background-image: none;
+  background-color: rgba(230,0,60,1.0);
+  background-color: rgba(48,143,191,1.0);
+  background-color: rgba(57,172,230,1.0);
+}
+
+
 
