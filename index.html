@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Інтернет проект УКРАЇНСЬКА ПІСНЯ – представляє кращі українські пісні, їх авторів та виконавців, тексти пісень та відеокліпи">
   <meta name="keywords" content="Пісня, українська пісня, українська музика, текст, аудіо, відео, співак, композитор, поет, виконавець, Песня, Украинская песня, песня Украины, музыка, украинская музыка, слово, стих, текст, певец, композитор, поэт, исполнитель">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">  --> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/ style-settings.css">
@@ -25,7 +25,7 @@
       <button class="site-nav__toggle" type="button"><span class="visually-hidden">Відкрити меню</span></button>
       <ul class="site-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="index.html" title="Головна сторінка сайту">Головна</a>
+          <a title="Головна сторінка сайту">Головна</a>
         </li>
         <li class="site-list__item">
           <a href="compositions.html" title="Список опублікованих композицій">Композиції</a>
@@ -72,7 +72,7 @@
       <section class="composition__promo promo">
         <div class="promo__icon">
           <a href="#composition">
-            <img src="img_mini/oniona2018s.png" width="100" height="100" alt="Промо Від ілюзій (bossa nova version) - On I Ona">
+            <img src="img_mini/oniona2018s.png" width="100" height="100" alt="Промо зображення Від ілюзій (bossa nova version) - On I Ona">
           </a>
         </div>
         <h2 class="promo__title">
@@ -234,13 +234,20 @@
           <p class="lyric__end">* * *</p>
         </section>
         
-        <footer class="composition__release">
-          <p class="composition__data">
-            <span class="release__label">Сингл: </span><a class="release__link" href="release.html">Від ілюзій</a>, 2018 рік
-          </p>
-          <p class="composition__data">
-            <span class="release__label">Видавець: </span>Best Music
-          </p>
+        <footer class="composition__release release-promo">
+          <div class="release-promo__picture">
+            <a href="release.html">
+              <img src="img/000460rel_320-320.jpg" width="100" height="100" alt="Промо альбом Від ілюзій (bossa nova version) - On I Ona">
+            </a>
+          </div>
+          <div class="release-promo__info">
+            <p class="composition__data">
+              <span class="release__label">Сингл: </span><a class="release__link" href="release.html">Від ілюзій</a>, 2018 рік
+            </p>
+            <p class="composition__data">
+              <span class="release__label">Видавець: </span>Best Music
+            </p>
+          </div>
         </footer>
         
       </article>
@@ -248,19 +255,19 @@
     
     <aside class="right-column">
       <div class="composition-top">
-      <div class="composition-top__images">
-        <a href="composition.html=829">
-          <img src="img/320-180_00829.jpg" width="320" height="180" alt="Обкладинка до композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
-        </a>
-      </div>
-      <h3 class="composition-top__title">
-        <a href="composition.html=829" alt="Перейти на сторінку композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
-          <span class="composition-top__name">Крила</span> - <span class="composition-top__performer">Jamala</span>
-        </a>
-      </h3>
+        <div class="composition-top__images">
+          <a href="composition.html=829">
+            <img src="img/320-180_00829.jpg" width="320" height="180" alt="Обкладинка до композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
+          </a>
+        </div>
+        <h3 class="composition-top__title">
+          <a href="composition.html=829" alt="Перейти на сторінку композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
+            <span class="composition-top__name">Крила</span> - <span class="composition-top__performer">Jamala</span>
+          </a>
+        </h3>
       </div>
       <div class="right-column__container">
-        <div class="right-column__banner"><!-- Банер 300 * 600 --></div>
+        <div class="right-column__banner"></div>
       </div>
     </aside>
   </div>
