@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Проект \"Українська пісня\" представляє" Наталія Гордієнко з композицією "Тільки тебе", відео та текст твору, інформацію про його авторів та виконавців.">
   <meta name="keywords" content="Тільки тебе, Гордієнко Наталія">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">  --> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/ style-settings.css">
@@ -27,11 +27,14 @@
         <li class="site-list__item">
           <a href="index.html" title="Головна сторінка сайту">Головна</a>
         </li>
-        <li class="site-list__item">
-          <a href="compositions.html" title="Список опублікованих композицій">Композиції</a>
+        <li class="site-list__item site-list__item--active">
+          <a href="#" title="Список опублікованих композицій">Композиції</a>
         </li>
         <li class="site-list__item">
-          <a href="performers.html" title="Співаки та виконавці">Виконавці</a></li><li class="site-list__item"><a href="kompozytory.php" title="Композитори та автори музики">Композитори</a>
+          <a href="performers.html" title="Співаки та виконавці">Виконавці</a>
+        </li>
+        <li class="site-list__item">
+          <a href="musicauthors.html" title="Композитори та автори музики">Композитори</a>
         </li>
         <li class="site-list__item">
           <a href="songwriters.html" title="Поети та автори текстів">Поети</a>
@@ -65,15 +68,16 @@
       <div class="section__caption section__caption--promo">#Тема дня</div>
         <section class="composition__promo promo">
           <div class="promo__icon">
-          <a href="#composition">
-            <img src="img_mini/gordienkonatalija2018s.png" width="100" height="100" alt="Промо Тільки тебе - Наталія Гордієнко">  </a>
-        </div>
-        <h2 class="promo__title">
-          <a href="#composition">
-            <span class="promo__composition">Тільки тебе - Наталія Гордієнко</span><br>
-            <span class="promo__authors">Слова: Лариса Архипенко, музика: В'ячеслав Трибуховський</span>
-          </a>
-        </h2>
+            <a href="#composition">
+              <img src="img_mini/gordienkonatalija2018s.png" width="100" height="100" alt="Промо Тільки тебе - Наталія Гордієнко">
+            </a>
+          </div>
+          <h2 class="promo__title">
+            <a href="#composition">
+              <span class="promo__composition">Тільки тебе - Наталія Гордієнко</span><br>
+              <span class="promo__authors">Слова: Лариса Архипенко, музика: В'ячеслав Трибуховський</span>
+            </a>
+          </h2>
         </section>
 
       <div class="section__caption">#Наша сімка </div>
@@ -205,13 +209,20 @@
           <p class="lyric__end">* * *</p>
         </section>
   
-        <footer class="composition__release">
-          <p class="composition__data">
-            <span class="release__label">Сингл: </span><a class="release__link" href="release.html">Тільки тебе</a>, 2018 рік
-          </p>
-          <p class="composition__data">
-            <span class="release__label">Видавець: </span><a class="release__link">Наталія Гордієнко</a>
-          </p>
+        <footer class="composition__release release-promo">
+          <div class="release-promo__picture">
+            <a href="release.html">
+              <img src="img_set/cd--75.png" width="100" height="100" alt="Промо альбом Тільки тебе - Наталія Гордієнко">
+            </a>
+          </div>
+          <div class="release-promo__info">
+            <p class="composition__data">
+              <span class="release__label">Сингл: </span><a class="release__link" href="release.html">Тільки тебе</a>, 2018 рік
+            </p>
+            <p class="composition__data">
+              <span class="release__label">Видавець: </span><a class="release__link">Наталія Гордієнко</a>
+            </p>
+          </div>
         </footer>
   
 </article>
@@ -219,19 +230,19 @@
     
     <aside class="right-column">
       <div class="composition-top">
-      <div class="composition-top__images">
-        <a href="composition.html=829">
-          <img src="img/320-180_00829.jpg" width="320" height="180" alt="Обкладинка до композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
-        </a>
-      </div>
-      <h3 class="composition-top__title">
-        <a href="composition.html=829" alt="Перейти на сторінку композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
-          <span class="composition-top__name">Крила</span> - <span class="composition-top__performer">Jamala</span>
-        </a>
-      </h3>
+        <div class="composition-top__images">
+          <a href="composition.html=829">
+            <img src="img/320-180_00829.jpg" width="320" height="180" alt="Обкладинка до композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
+          </a>
+        </div>
+        <h3 class="composition-top__title">
+          <a href="composition.html=829" alt="Перейти на сторінку композиції Крила - Jamala (Ukrainian national selection Eurovision Song Contest - 2018)">
+            <span class="composition-top__name">Крила</span> - <span class="composition-top__performer">Jamala</span>
+          </a>
+        </h3>
       </div>
       <div class="right-column__container">
-        <div class="right-column__banner"><!-- Банер 300 * 600 --></div>
+        <div class="right-column__banner"></div>
       </div>
     </aside>
   </div>
