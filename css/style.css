@@ -1256,31 +1256,53 @@ body {
   
   font-size: 16px;
   font-weight: bold;
+  line-height: 24px;
   color: rgba(0,0,0,0.8);
 }
 
 @media (min-width: 768px) {
   .lyric .lyric__title {
     font-size: 18px;
+    line-height: 26px;
   }
 }
 
 .lyric p {
   margin: 0;
+  margin-top: 14px;
+  margin-bottom: 7px;
 }
 
-.liric .zag,
+.lyric .zag,
 .lyric .caption {
-  margin-top: 16px;
+  /* margin-top: 16px; */
+  line-height: 22px;
+  font-weight: bold;
   color: rgba(0,0,0,0.8);
+}
+
+@media (min-width: 768px) {
+  .lyric p {
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .lyric .zag,
+  .lyric .caption {
+    /* margin-top: 16px; */
+    line-height: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    }
 }
 
 .lyric .kuplet,
 .lyric .pryspiv,
 .lyric .verse,
 .lyric .chorus {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  /* margin-top: 16px; */
+  /* margin-bottom: 16px; */
 }
 
 .lyric .pryspiv,
@@ -1288,10 +1310,10 @@ body {
   font-style: italic;
 }
 
-.liric .zag + .kuplet,
-.liric .zag + .pryspiv,
-.lyric .caption + .verse,
-.lyric .caption + .chorus {
+.zag + .kuplet,
+.zag + .pryspiv,
+.caption + .verse,
+.caption + .chorus {
   margin-top: 8px;
   margin-bottom: 16px;
 }
