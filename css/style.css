@@ -8,7 +8,6 @@
     url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff"),
     url("//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic");
-;
 }
 
 /*
@@ -320,10 +319,10 @@ body {
 
 .site-list {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 20px;
-  /* color: rgba(0,0,0,0.6); */
-  color: #595959;
+  /* color: rgba(0,0,0,0.7); */
+  color: #4d4d4d;
 }
 
 @media (min-width: 768px) {
@@ -331,10 +330,6 @@ body {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    
-    font-weight: normal;
-    color: rgba(0,0,0,0.7);
-    
     /* background-color: transparent; */
   }
 }
@@ -785,6 +780,11 @@ body {
   line-height: 24px;
 }
 
+.page__label {
+  display: inline-block;
+  color: rgba(0,0,0,0.5);
+}
+
 .page__description {
   margin: 0;
   margin-bottom: 32px;
@@ -795,7 +795,7 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
-
+  
   .page__description {
     margin: 0;
     margin-bottom: 32px;
@@ -828,14 +828,16 @@ body {
   position: relative;
   min-height: 100px;
   margin: 0;
+  margin-bottom: 28px;
   margin-right: 10px;
   padding-left: 110px;
-  padding-bottom: 32px;
+  /* padding-bottom: 28px; */
 }
 
 @media (min-width: 768px) {
   .promo {
-    padding-bottom: 35px;
+    /* padding-bottom: 32px; */
+    margin-bottom: 32px;
   }
 }
 
@@ -902,11 +904,16 @@ body {
 
 .compositions {
   margin: 0;
-  margin-top: 0px;
-  margin-bottom: 32px;
-  padding-bottom: 32px;
-  padding-bottom: 16px;
+  margin-bottom: 28px;
+  /* padding-bottom: 32px; */
+  /* padding-bottom: 16px; */
   border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+@media (min-width: 768px) {
+  .compositions {
+    margin-bottom: 32px;
+  }
 }
 
 .compositions__list,
@@ -1064,7 +1071,7 @@ body {
 .release__info {
   margin: 0;
   margin-top: 14px;
-  margin-bottom: 21px;
+  margin-bottom: 28px;
   font-size: 14px;
 }
 
@@ -1072,7 +1079,7 @@ body {
   .release__info {
     font-size: 16px;
     margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1082,8 +1089,8 @@ body {
 }
 
 .release__picture {
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  /* height: 300px; */
   margin-bottom: 14px;
 }
 
@@ -1149,7 +1156,7 @@ body {
 .composition__title,
 .release__title {
   margin: 0;
-  /* margin-bottom: 8px; */
+  margin-bottom: 8px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -1162,7 +1169,7 @@ body {
   .composition__title,
   .release__title {
     /* margin-top: 20px; */
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -1207,7 +1214,8 @@ body {
 }
 
 .composition__subject {
-  margin-top: 16px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 @media (min-width: 768px) {
@@ -1220,6 +1228,11 @@ body {
     font-size: 16px;
     /* line-height: 20px; */
     line-height: 24px;
+  }
+  
+  .composition__subject {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -1331,11 +1344,6 @@ body {
   margin-bottom: 7px;
 }
 
-.lyric .lyric__end {
-  margin-top: 14px;
-  /* margin-bottom: 16px;  */
-}
-
 @media (min-width: 768px) {
   .zag + .kuplet,
   .zag + .pryspiv,
@@ -1344,11 +1352,6 @@ body {
     margin-top: 8px;
     margin-bottom: 16px;
     margin-bottom: 8px;
-  }
-
-  .lyric .lyric__end {
-    margin-top: 16px;
-    /* margin-bottom: 16px;  */
   }
 }
 
@@ -1369,12 +1372,13 @@ body {
   min-height: 75px;
   padding-bottom: 14px;
   border-bottom: 1px solid #cccccc;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 0px;
 }
 
 @media (min-width: 768px) {
   .release-promo {
-    font-size: 16px;
+    /* font-size: 16px; */
     padding-bottom: 16px;
  }
 }
@@ -1394,9 +1398,22 @@ body {
 
 .release-promo__info {
   display: inline-block;
+  max-width: 215px;
   vertical-align: middle;
   margin: 0;
   margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .release-promo__info {
+    max-width: 395px;
+ }
+}
+
+@media (min-width: 1024px) {
+  .release-promo__info {
+    max-width: 475px;
+ }
 }
 
 .right-column {
