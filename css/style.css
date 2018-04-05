@@ -7,7 +7,7 @@
     local("PTSans-Regular"),
     url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff"),
-    url("https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic");
+    url("//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic");
 ;
 }
 
@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   
-  /* РћР±С‰РёРµ / РїСЂРµРѕР±Р»Р°РґР°СЋС‰РёРµ РїР°СЂР°РјРµС‚СЂС‹ С€СЂРёС„С‚РѕРІ РґР»СЏ РІСЃРµР№ СЃС‚СЂР°РЅРёС†С‹  */
+  /* Общие / преобладающие параметры шрифтов для всей страницы  */
   font-weight: normal;
   font-size: 14px;
   line-height: normal;
@@ -77,9 +77,9 @@ body {
   /* font-family: "Arial", sans-serif; */
   /* font-family: "Open Sans", "Arial", sans-serif; */
 
-  /*Р•СЃР»Рё РІ Р±Р»РѕРєРµ Р·Р°РґР°С‘Рј С†РІРµС‚ С„РѕРЅР°, С‚Рѕ СЃСЂР°Р·Сѓ РЅР°РґРѕ Р·Р°РґР°С‚СЊ РєРѕРЅС‚СЂР°СЃС‚РЅС‹Р№ С†РІРµС‚ С‚РµРєСЃС‚Р°.*/
+  /*Если в блоке задаём цвет фона, то сразу надо задать контрастный цвет текста.*/
   color: rgba(0,0,0,0.8);
-  /*Р—Р°РґР°РґРёРј СЃС‚СЂР°РЅРёС†Рµ Р·Р°РґРЅРёР№ С„РѕРЅ. РќРµ Р·Р°Р±С‹РІР°РµРј СѓРєР°Р·Р°С‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РёР·РѕР±СЂР°Р¶РµРЅРёРµ, РЅРѕ Рё С†РІРµС‚ С„РѕРЅР°.*/
+  /*Зададим странице задний фон. Не забываем указать не только изображение, но и цвет фона.*/
   background: #ffffff url("../img/body-   bg.jpg") no-repeat center top;
 }
 
@@ -100,7 +100,7 @@ body {
 
 .page-header__top {
   padding: 0;
-  /* background-color РІРєС–РЅС†С– style.css */
+  /* background-color вкінці style.css */
   background-color: rgba(230,0,60,1.0);
 }
 
@@ -136,7 +136,7 @@ body {
   /* height: 65px; */
   height: auto;
   /* height: 100%; */
-  /* РїС–РґСЃРІС–С‚РєР° Р»РѕРіРѕС‚РёРїСѓ */
+  /* підсвітка логотипу */
   /* background-color: rgba(230,100,60,1.0); */
 }
 
@@ -703,7 +703,7 @@ body {
 }
 
 .left-column__banner::before {
-  /* content: "Р‘Р°РЅРµСЂ 300*100"; */
+  /* content: "Банер 300*100"; */
 }
 
 @media (min-width: 768px) {
@@ -713,7 +713,7 @@ body {
   }
   
   .left-column__banner::before {
-    /* content: "Р‘Р°РЅРµСЂ 728*90"; */
+    /* content: "Банер 728*90"; */
   }
 }
 
@@ -724,7 +724,7 @@ body {
   }
   
   .left-column__banner::before {
-    /* content: "Р‘Р°РЅРµСЂ 150*600"; */
+    /* content: "Банер 150*600"; */
   }
 }
 
@@ -900,6 +900,15 @@ body {
   }
 }
 
+.compositions {
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
 .compositions__list,
 .types__list,
 .names__list,
@@ -994,6 +1003,7 @@ body {
 .the-end {
   font-weight: bold;
   text-align: center;
+  /* display: none; */
 }
 
 .page-main__container {
@@ -1024,7 +1034,7 @@ body {
 }
 
 .page-main__banner::before {
-  /* content: "Р‘Р°РЅРµСЂ 300*100"; */
+  /* content: "Банер 300*100"; */
 }
 
 @media (min-width: 768px) {
@@ -1034,7 +1044,7 @@ body {
     
   }
   .page-main__banner::before {
-    /* content: "Р‘Р°РЅРµСЂ 468*60"; */
+    /* content: "Банер 468*60"; */
   }
 }
 
@@ -1093,8 +1103,8 @@ body {
   margin: 0;
   margin-bottom: 14px;
   padding-bottom: 56.25%; 
-  /* Р·Р°РґР°С‘С‚ РІС‹СЃРѕС‚Сѓ РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ 16:9 */
-  /* Р·Р°РґР°С‘С‚ РІС‹СЃРѕС‚Сѓ РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ 4:3 */ 
+  /* задаёт высоту контейнера для 16:9 */
+  /* задаёт высоту контейнера для 4:3 */ 
   /* padding-bottom: 75%; */
   /* padding-top: 30px; */
   height: 0;
@@ -1139,10 +1149,10 @@ body {
 .composition__title,
 .release__title {
   margin: 0;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   font-weight: bold;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
   
   /* color: rgba(0,0,0,0.9); */
   color: inherit;
@@ -1151,9 +1161,10 @@ body {
 @media (min-width: 768px) {
   .composition__title,
   .release__title {
-    margin-bottom: 10px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 10px; */
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 
@@ -1251,7 +1262,7 @@ body {
 
 .lyric .lyric__title {
   margin: 0;
-  /* margin-top: 32px;  */
+  margin-top: 16px; 
   margin-bottom: 16px; 
   
   font-size: 16px;
@@ -1262,6 +1273,8 @@ body {
 
 @media (min-width: 768px) {
   .lyric .lyric__title {
+    margin-top: 18px; 
+    margin-bottom: 18px; 
     font-size: 18px;
     line-height: 26px;
   }
@@ -1278,7 +1291,7 @@ body {
   /* margin-top: 16px; */
   line-height: 22px;
   font-weight: bold;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.6);
 }
 
 @media (min-width: 768px) {
@@ -1293,7 +1306,6 @@ body {
     /* margin-top: 16px; */
     line-height: 24px;
     font-weight: bold;
-    color: rgba(0,0,0,0.8);
     }
 }
 
@@ -1314,13 +1326,30 @@ body {
 .zag + .pryspiv,
 .caption + .verse,
 .caption + .chorus {
-  margin-top: 8px;
-  margin-bottom: 16px;
+  margin-top: 7px;
+  margin-bottom: 14px;
+  margin-bottom: 7px;
 }
 
 .lyric .lyric__end {
-  margin-top: 16px;
+  margin-top: 14px;
   /* margin-bottom: 16px;  */
+}
+
+@media (min-width: 768px) {
+  .zag + .kuplet,
+  .zag + .pryspiv,
+  .caption + .verse,
+  .caption + .chorus {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-bottom: 8px;
+  }
+
+  .lyric .lyric__end {
+    margin-top: 16px;
+    /* margin-bottom: 16px;  */
+  }
 }
 
 .composition__release {
@@ -1510,7 +1539,7 @@ body {
 }
 
 .right-column__banner::before {
-  /* content: "Р‘Р°РЅРµСЂ 300*100"; */
+  /* content: "Банер 300*100"; */
 }
 
 @media (min-width: 768px) {
@@ -1520,7 +1549,7 @@ body {
   }
   
   .right-column__banner::before {
-    /* content: "Р‘Р°РЅРµСЂ 240*400"; */
+    /* content: "Банер 240*400"; */
   }
 }
 
@@ -1543,7 +1572,7 @@ body {
 .page-footer__nav,
 .page-footer__bottom {
   margin: 0;
-  /* background-color РІРєС–РЅС†С– style.css */
+  /* background-color вкінці style.css */
   background-color: rgba(230,0,60,1.0);
 }
 
@@ -1838,6 +1867,7 @@ body {
 }
 
 .page-header__top,
+.page-main__banner,
 .page-footer__top,
 .page-footer__nav,
 .page-footer__bottom,
@@ -1848,6 +1878,3 @@ body {
   background-color: rgba(48,143,191,1.0);
   background-color: rgba(57,172,230,1.0);
 }
-
-
-
