@@ -1015,14 +1015,13 @@ body {
 
 .page-main__container {
   margin: 0 auto;
-  /* margin-bottom: 50px; */
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   min-width: 300px;
 }
 
 @media (min-width: 768px) {
   .page-main__container {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1050,6 +1049,7 @@ body {
     height: 60px;
     
   }
+  
   .page-main__banner::before {
     /* content: "Банер 468*60"; */
   }
@@ -1579,10 +1579,46 @@ body {
 
 .page-footer {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 28px;
   padding: 0;
   
   color: rgba(255,255,255,1.0);
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    margin-top: 32px;
+  }
+}
+
+.page-footer__container {
+  margin: 0 auto;
+  margin-bottom: 28px;
+  min-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__container {
+    margin-bottom: 32px;
+  }
+}
+
+.page-footer__banner {
+  display: none;
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  
+  background-color: #c42482;
+  background-image: linear-gradient(to bottom, rgb(0, 62, 170) 20%, rgb(0, 78, 194) 40%, rgb(0, 96, 223) 60%, rgb(0, 128, 255) 80%, rgb(0, 199, 255) 100%);
+}
+
+@media (min-width: 768px) {
+  .page-footer__banner {
+    display: block;
+    width: 728px;
+    height: 90px;
+  }
 }
 
 .page-footer__top,
@@ -1885,6 +1921,7 @@ body {
 
 .page-header__top,
 .page-main__banner,
+.page-footer__banner,
 .page-footer__top,
 .page-footer__nav,
 .page-footer__bottom,
