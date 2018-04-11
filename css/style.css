@@ -91,7 +91,7 @@ body {
 
 .page-header {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   padding: 0;
   
   color: rgba(255,255,255,1.0);
@@ -104,6 +104,11 @@ body {
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    /* margin-bottom: 40px; */
+    margin-bottom: 32px;
+  }
+  
   .page-header__top {
     display: flex;
     margin: 0 auto;
@@ -663,12 +668,14 @@ body {
 
 @media (min-width: 768px) {
   .left-column {
+    display: none;
     width: 748px;
   }
 }
 
 @media (min-width: 1024px) {
   .left-column {
+    display: block;
     /* width: 140px; */
     width: 150px;
   }
@@ -676,7 +683,7 @@ body {
 
 .left-column__container {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
 }
 
 .left-column__banner {
@@ -703,6 +710,7 @@ body {
 
 @media (min-width: 768px) {
   .left-column__banner {
+    display: none;
     width: 728px;
     height: 90px;
   }
@@ -714,6 +722,7 @@ body {
 
 @media (min-width: 1024px) {
   .left-column__banner {
+    display: block;
     width: 150px;
     height: 600px;
   }
@@ -1521,21 +1530,54 @@ body {
 
 .right-column__container {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
   min-width: 300px;
+}
+
+.right-column__container {
+  margin: 0;
+  margin-bottom: 28px;
+  min-width: 300px;
+}
+
+.right-column__tools {
+  margin: 28px auto;  
+  min-width: 300px;
+  background-color: #f9f9f9;
+}
+
+.counters {
+  width: 88px;
+  height: 51px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: 768px) {
   .right-column__container {
     margin: 0 auto;
-    padding: 0;
+    margin-bottom: 32px;
     min-width: 240px;
+  }
+  
+  .right-column__tools {
+    margin: 32px auto;  
+    min-width: 240px;
+    width: 240px;
+    background-color: #f9f9f9;
+  }
+  
+  .counters {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
 @media (min-width: 1024px) {
   .right-column__container {
     margin: 0 auto;
+    margin-bottom: 32px;
   }
 }
 
@@ -1587,7 +1629,8 @@ body {
 
 @media (min-width: 768px) {
   .page-footer {
-    margin-top: 32px;
+    /* margin-top: 32px; */
+    margin: 0;
   }
 }
 
