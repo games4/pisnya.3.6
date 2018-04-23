@@ -1,14 +1,14 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: 
-    local("PT Sans"), 
-    local("PTSans-Regular"),
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff"),
-    url("//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic");
-}
+/* @font-face { */
+  /* font-family: "PT Sans"; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* src: url("https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic") format('woff2'); */
+    /* local("PT Sans"),  */
+    /* local("PTSans-Regular"), */
+    /* url("../fonts/ptsans.woff2") format("woff2"), */
+    /* url("../fonts/ptsans.woff") format("woff"), */
+    /* url("https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic"); */
+/* } */
 
 /*
 @font-face {
@@ -23,19 +23,46 @@
 }
 */
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: bold;
-  font-weight: 700;
-  src: 
-    local("PT Sans Bold"), 
-    local("PTSans-Bold"),
-    url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff"),
-    url("https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic");
-}
+/* @font-face { */
+  /* font-family: "PT Sans"; */
+  /* font-style: bold; */
+  /* font-weight: 700; */
+  /* src:  */
+    /* local("PT Sans Bold"),  */
+    /* local("PTSans-Bold"), */
+    /* url("../fonts/ptsansbold.woff2") format("woff2"), */
+    /* url("../fonts/ptsansbold.woff") format("woff"), */
+    /* url("https://fonts.googleapis.com/css?family=PT+Sans:700&subset=cyrillic"); */
+/* } */
 
-/* @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic'); */
+/* @font-face { */
+  /* font-family: "PT Sans"; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* src:  */
+    /* local("PT Sans"),  */
+    /* local("PTSans-Regular"),  */
+    /* url("https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0aExdGM.woff2") format("woff2"); */
+  /* unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116; */
+/* } */
+
+/* @font-face { */
+  /* font-family: "PT Sans"; */
+  /* font-style: italic; */
+  /* font-weight: 400; */
+  /* src: local("PT Sans Italic"), local("PTSans-Italic"), url("https://fonts.gstatic.com/s/ptsans/v9/jizYRExUiTo99u79D0e0w8mIEDQ.woff2") format("woff2"); */
+  /* unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116; */
+/* } */
+
+/* @font-face { */
+  /* font-family: "PT Sans"; */
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  /* src: local("PT Sans Bold"), local("PTSans-Bold"), url("https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0OqtLQ0Z.woff2") format("woff2"); */
+  /* unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116; */
+/* } */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic');
 
 .none {
   display: none;
@@ -72,8 +99,8 @@ body {
   /* text-transform: uppercase; */
   
   font-family: "PT Sans", "Arial", sans-serif;
+  /* font-family: "PT Sans", sans-serif; */
   /* font-family: "Source Sans Pro", "Arial", sans-serif; */
-  /* font-family: "Arial", sans-serif; */
   /* font-family: "Open Sans", "Arial", sans-serif; */
 
   /*Если в блоке задаём цвет фона, то сразу надо задать контрастный цвет текста.*/
@@ -111,6 +138,7 @@ body {
   
   .page-header__top {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     width: 748px;
     
@@ -125,7 +153,8 @@ body {
   }
 }
 
-.page-header__logo {
+.page-header__logo,
+.page-header__search {
   display: block;
   margin: 0 auto;
   padding: 10px; 
@@ -133,6 +162,10 @@ body {
   /* height: 65px; */
   
   text-align: center;
+}
+
+.page-header__search {
+  /* min-width: 300px; */
 }
 
 .page-header__logo-image {
@@ -145,14 +178,16 @@ body {
 }
 
 @media (min-width: 768px) {
-  .page-header__logo {
+  .page-header__logo,
+  .page-header__search {
     margin: 15px 20px; 
     /* height: 73px; */
   }
 }
 
 @media (min-width: 1024px) {
-  .page-header__logo {
+  .page-header__logo,
+  .page-header__search {
     margin: 20px 25px; 
   }
   
@@ -340,9 +375,7 @@ body {
 }
 
 .site-list__item {
-  /* margin: 0 10px; */
   margin: 0;
-  /* background-color: rgba(0,0,0,0.05); */
 }
 
 @media (min-width: 768px) {
@@ -376,7 +409,8 @@ body {
 .site-list__item a[href]:hover,
 .site-list__item a[href]:active {
   color: rgba(0,0,0,0.9);
-  background-color: rgba(0,0,0,0.04);
+  /* background-color: rgba(0,0,0,0.04); */
+  background-color: rgba(57,172,230,0.05);
   border-color: rgba(230,0,60,1.0);
 }
 
