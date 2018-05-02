@@ -166,6 +166,7 @@ body {
 
 .page-header__search {
   /* min-width: 300px; */
+  max-width: 480px; */
 }
 
 .page-header__logo-image {
@@ -175,6 +176,13 @@ body {
   /* height: 100%; */
   /* підсвітка логотипу */
   /* background-color: rgba(230,100,60,1.0); */
+}
+
+@media (min-width: 320px, max-width: 768px) {
+  .page-header__logo,
+  .page-header__search {
+    max-width: 480px; 
+  }
 }
 
 @media (min-width: 768px) {
@@ -768,8 +776,16 @@ body {
 
 .page-main {
   margin: 0 10px;
+  /* margin: 0 auto; */
   margin-bottom: 28px;
   min-width: 300px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .page-main {
+  margin: 0 auto;
+  max-width: 480px; 
+  }
 }
 
 @media (min-width: 768px) {
@@ -1099,19 +1115,30 @@ body {
 }
 
 .composition,
-.release {
+.release,
+.notes {
   margin: 0 auto;
   min-width: 300px;
 }
 
+/* @media (min-width: 320px, max-width: 768px) { */
+  /* .composition, */
+  /* .release, */
+  /* .notes { */
+    /* max-width: 480px;  */
+  /* } */
+/* } */
+
 @media (min-width: 768px) {
   .composition,
-  .release {
+  .release,
+  .notes {
     min-width: 480px;
   }
 }
 
-.release__info {
+.release__info,
+.notes__info {
   margin: 0;
   margin-top: 14px;
   margin-bottom: 28px;
@@ -1119,7 +1146,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .release__info {
+  .release__info,
+  .notes__info  {
     font-size: 16px;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -1148,7 +1176,32 @@ body {
   height: 300px;
 }
 
-.composition__video {
+/* .notes__picture img { */
+  /* width: 300px; */
+  /* height: 169px; */
+/* } */
+
+@media (min-width: 768px) {
+  /* .notes__picture img { */
+    /* width: 480px; */
+    /* height: 270px; */
+  /* } */
+}
+
+@media (min-width: 1024px) {
+  /* .notes__picture { */
+    /* width: 560px; */
+    /* height: 315px; */
+  /* } */
+  
+  /* .notes__picture img { */
+    /* width: 560px; */
+    /* height: 315px; */
+  /* } */
+}
+
+.composition__video,
+.notes__picture {
   position: relative;
   margin: 0;
   margin-bottom: 14px;
@@ -1162,13 +1215,15 @@ body {
 }
 
 @media (min-width: 768px) {
-  .composition__video {
+  .composition__video,
+  .notes__picture  {
     margin-bottom: 16px;
     box-shadow: 0 8px 8px -4px rgba(0,0,0,0.5);
   }
 }
 
-.composition__video iframe {
+.composition__video iframe,
+.notes__picture img {
   position: absolute;
   top: 0; 
   left: 0;
@@ -1197,7 +1252,8 @@ body {
 }
 
 .composition__title,
-.release__title {
+.release__title,
+.notes__title {
   margin: 0;
   margin-bottom: 8px;
   font-weight: bold;
@@ -1210,7 +1266,8 @@ body {
 
 @media (min-width: 768px) {
   .composition__title,
-  .release__title {
+  .release__title,
+  .notes__title{
     /* margin-top: 20px; */
     margin-bottom: 10px;
     font-size: 20px;
@@ -1247,7 +1304,8 @@ body {
 .composition__performer,
 .composition__author,
 .composition__data,
-.releas__data {
+.releas__data,
+.notes__data {
   margin: 0;
   /* margin-bottom: 6px; */
   font-size: 14px;
@@ -1255,6 +1313,10 @@ body {
   line-height: 22px;
   color: inherit;
 }
+
+.notes__data {
+  margin: 7px 0;
+} 
 
 .composition__subject {
   margin-top: 14px;
@@ -1266,12 +1328,17 @@ body {
   .composition__performer,
   .composition__author,
   .composition__data,
-  .releas__data {
+  .releas__data,
+  .notes__data {
     /* margin-bottom: 8px; */
     font-size: 16px;
     /* line-height: 20px; */
     line-height: 24px;
   }
+
+  .notes__data {
+    margin: 8px 0;
+  } 
   
   .composition__subject {
     margin-top: 16px;
@@ -1283,7 +1350,8 @@ body {
 .composition__performer a,
 .composition__author a,
 .composition__data a,
-.releas__data a {
+.releas__data a,
+.notes__data a {
   /* display: inline-block; */
   color: inherit;
   /* color: #0d5980; */
@@ -1301,7 +1369,8 @@ body {
 .composition__performer a:hover,
 .composition__author a:hover,
 .composition__data a:hover,
-.releas__data a:hover {
+.releas__data a:hover,
+.notes__data a:hover {
   color: rgba(0,0,0,1.0);
   /* color: #219bd9; */
   
@@ -1311,7 +1380,8 @@ body {
 }
 
 .composition__label,
-.release__label {
+.release__label,
+.notes__label {
   font-weight: bold;
   color: rgba(0,0,0,0.5);
 }
