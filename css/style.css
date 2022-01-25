@@ -1121,12 +1121,20 @@ body {
   font-size: 14px;
 }
 
+.notes__info {
+  margin-bottom: 21px;
+}
+
 @media (min-width: 768px) {
   .release__info,
   .notes__info  {
     font-size: 16px;
     margin-top: 16px;
     margin-bottom: 32px;
+  }
+  
+  .notes__info  {
+    margin-bottom: 24px;
   }
 }
 
