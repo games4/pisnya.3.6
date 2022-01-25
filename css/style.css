@@ -166,7 +166,6 @@ body {
 
 .page-header__search {
   /* min-width: 300px; */
-  max-width: 480px; */
 }
 
 .page-header__logo-image {
@@ -176,13 +175,6 @@ body {
   /* height: 100%; */
   /* підсвітка логотипу */
   /* background-color: rgba(230,100,60,1.0); */
-}
-
-@media (min-width: 320px, max-width: 768px) {
-  .page-header__logo,
-  .page-header__search {
-    max-width: 480px; 
-  }
 }
 
 @media (min-width: 768px) {
@@ -776,16 +768,8 @@ body {
 
 .page-main {
   margin: 0 10px;
-  /* margin: 0 auto; */
   margin-bottom: 28px;
   min-width: 300px;
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .page-main {
-  margin: 0 auto;
-  max-width: 480px; 
-  }
 }
 
 @media (min-width: 768px) {
@@ -1120,14 +1104,6 @@ body {
   margin: 0 auto;
   min-width: 300px;
 }
-
-/* @media (min-width: 320px, max-width: 768px) { */
-  /* .composition, */
-  /* .release, */
-  /* .notes { */
-    /* max-width: 480px;  */
-  /* } */
-/* } */
 
 @media (min-width: 768px) {
   .composition,
