@@ -842,6 +842,10 @@ body {
   border-top: 1px solid #cccccc;
 }
 
+.section__caption--promo {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .section__caption {
     margin-bottom: 16px;
@@ -849,17 +853,17 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .section__caption--promo {
-    display: none;
-  }
-}
+/* @media (min-width: 768px) { */
+  /* .section__caption--promo { */
+    /* display: none; */
+  /* } */
+/* } */
 
-@media (min-width: 1024px) {
-  .section__caption--promo {
-    display: none;
-  }
-}
+/* @media (min-width: 1024px) { */
+  /* .section__caption--promo { */
+    /* display: none; */
+  /* } */
+/* } */
 
 .page__title {
   margin: 0;
