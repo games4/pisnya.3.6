@@ -1103,28 +1103,29 @@ body {
 }
 
 .page-main__banner {
-  width: 300px;
-  height: 100px;
+  /* width: 300px; */
+  width: auto;
+  /* height: 100px; */
+  min-height: 50px;
   margin: 0 auto;
   
-  font-size: 36px;
-  font-weight: bold;
-  color: rgba(255,255,255,0.5);
-  text-align: center;
+  /* font-size: 36px; */
+  /* font-weight: bold; */
+  /* color: rgba(255,255,255,0.5); */
+  /* text-align: center; */
   
   background-color: #c42482;
   background-image: linear-gradient(to bottom, rgb(0, 62, 170) 20%, rgb(0, 78, 194) 40%, rgb(0, 96, 223) 60%, rgb(0, 128, 255) 80%, rgb(0, 199, 255) 100%);
 }
 
 .page-main__banner::before {
-  /* content: "Банер 300*100"; */
+  /* content: "Банер page-main__banner"; */
 }
 
 @media (min-width: 768px) {
   .page-main__banner {
     width: 468px;
     height: 60px;
-    
   }
   
   .page-main__banner::before {
@@ -1548,14 +1549,15 @@ body {
 }
 
 .right-column {
-  margin: 0 10px;
-  min-width: 300px;
-  
-  /* background-color: #f4f0f7; */
+  display: none;
+  /* margin: 0 10px; */
+  /* min-width: 300px; */
 }
 
 @media (min-width: 768px) {
   .right-column {
+    display: block;
+    margin: 0 10px;
     min-width: 240px;
   }
 }
@@ -1758,20 +1760,15 @@ body {
 
 .page-footer__container {
   margin: 0 auto;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   min-width: 300px;
 }
 
-@media (min-width: 768px) {
-  .page-footer__container {
-    margin-bottom: 32px;
-  }
-}
-
 .page-footer__banner {
-  display: none;
-  width: 728px;
-  height: 90px;
+  /* display: none; */
+  width: auto;
+  max-height: 250px;
+  height: 250px;
   margin: 0 auto;
   
   background-color: #c42482;
@@ -1779,10 +1776,21 @@ body {
 }
 
 @media (min-width: 768px) {
+  .page-footer__container {
+    /* margin-bottom: 32px; */
+    width: 768px;
+  }
+  
   .page-footer__banner {
     display: block;
-    width: 728px;
+    /* width: 728px; */
     height: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-footer__container {
+    width: 980px;
   }
 }
 
@@ -2085,6 +2093,7 @@ body {
 }
 
 .page-header__top,
+.page-header__banner,
 .page-main__banner,
 .page-footer__banner,
 .page-footer__top,
@@ -2096,4 +2105,14 @@ body {
   background-color: rgba(230,0,60,1.0);
   background-color: rgba(48,143,191,1.0);
   background-color: rgba(57,172,230,1.0);
+}
+
+.page-header__banner,
+.page-main__banner,
+.page-footer__banner,
+.left-column__banner,
+.right-column__banner {
+  background-color: none;
+  background: none;
+  background-image: linear-gradient(to bottom, rgba(57,172,230,0.9) 20%, rgba(57,172,230,0.7) 40%, rgba(57,172,230,0.5) 60%, rgba(57,172,230,0.7) 80%, rgba(57,172,230,0.9) 100%);
 }
