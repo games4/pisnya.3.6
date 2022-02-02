@@ -979,15 +979,13 @@ body {
 
 .compositions {
   margin: 0;
-  margin-bottom: 28px;
-  /* padding-bottom: 32px; */
-  /* padding-bottom: 16px; */
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 14px;
+  /* border-bottom: 1px solid rgba(0,0,0,0.2); */
 }
 
 @media (min-width: 768px) {
   .compositions {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 }
 
