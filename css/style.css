@@ -130,6 +130,17 @@ body {
   background-color: rgba(230,0,60,1.0);
 }
 
+.page-header__banner {
+  width: auto;
+  max-height: 250px;
+  /* height: 250px; */
+  margin: 0 auto;
+  padding: 0;
+  
+  background-color: #c42482;
+  background-image: linear-gradient(to bottom, rgb(0, 62, 170) 20%, rgb(0, 78, 194) 40%, rgb(0, 96, 223) 60%, rgb(0, 128, 255) 80%, rgb(0, 199, 255) 100%);
+}
+
 @media (min-width: 768px) {
   .page-header {
     /* margin-bottom: 40px; */
@@ -145,10 +156,16 @@ body {
     box-shadow: none;
     box-shadow: 0 7px 5px -5px rgba(0,0,0,0.5);
   }
+  
+  .page-header__banner {
+    margin: 0 auto;
+    width: 748px;
+  }
 }
 
 @media (min-width: 1024px) {
-  .page-header__top {
+  .page-header__top,
+  .page-header__banner {
     width: 990px;
   }
 }
