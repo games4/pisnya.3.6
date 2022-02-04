@@ -1130,6 +1130,11 @@ body {
   /* content: "Банер page-main__banner"; */
 }
 
+.page-main__banner--middle {
+  width: auto;
+  max-height: 350px;
+}
+
 @media (min-width: 768px) {
   .page-main__banner {
     width: 468px;
@@ -1557,14 +1562,12 @@ body {
 }
 
 .right-column {
-  display: none;
-  /* margin: 0 10px; */
-  /* min-width: 300px; */
+  margin: 0 10px;
+  min-width: 300px;
 }
 
 @media (min-width: 768px) {
   .right-column {
-    display: block;
     margin: 0 10px;
     min-width: 240px;
   }
