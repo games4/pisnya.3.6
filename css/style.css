@@ -1664,19 +1664,14 @@ body {
 }
 
 .right-column__container {
-  margin: 0;
-  margin-bottom: 28px;
-  min-width: 300px;
-}
-
-.right-column__container {
+  display: none;
   margin: 0;
   margin-bottom: 28px;
   min-width: 300px;
 }
 
 .right-column__tools {
-  margin: 28px auto;  
+  margin: 28px auto;
   min-width: 300px;
   background-color: #f9f9f9;
 }
@@ -1691,6 +1686,7 @@ body {
 
 @media (min-width: 768px) {
   .right-column__container {
+    display: block;
     margin: 0 auto;
     margin-bottom: 32px;
     min-width: 240px;
