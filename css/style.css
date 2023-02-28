@@ -106,13 +106,45 @@ body {
   /*Если в блоке задаём цвет фона, то сразу надо задать контрастный цвет текста.*/
   color: rgba(0,0,0,0.8);
   /*Зададим странице задний фон. Не забываем указать не только изображение, но и цвет фона.*/
-  background: #ffffff url("../img/body-   bg.jpg") no-repeat center top;
+  background: #ffffff url("../img/_bg-body .jpg") no-repeat center top;
 }
 
 @media (min-width: 480px) {
   body {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../img/_bg-body-logo-s.png"), url("../img/_bg-body.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    /* background-image: url("../img/_bg-body-logo-m.png"), url("../img/_bg-body-m.jpg"); */
+    background-image: url("../img/_bg-body-logo-m.png"), url("../img/_bg-body.jpg");
+    background-size: contain, auto;
+ }
+}
+
+@media (min-width: 1280px) {
+  body {
+    /* background-image: url("../img/_bg-body-logo-x.png"), url("../img/_bg-body-x.jpg"); */
+    background-image: url("../img/_bg-body-logo-x.png"), url("../img/_bg-body.jpg");
+    background-size: contain, auto;
+  }
+}
+
+@media (min-width: 1840px) {
+  body {
+    /* background-image: url("../img/_bg-body-logo-x.png"), url("../img/_bg-body-x.jpg"); */
+    background-image: url("../img/_bg-body-logo-x.png"), url("../img/_bg-body.jpg");
+    /* background-size: auto, auto; */
   }
 }
 
