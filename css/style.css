@@ -747,8 +747,15 @@ body {
 .main-wrapper {
   margin: 0 auto;
   padding: 0;
+  padding-top: 28px;
   
-  /* background-color: rgba(0,0,255,0.03); */
+  background-color: rgba(255,255,255,1.0);
+}
+
+.start-page .main-wrapper {
+  padding-top: 370px;
+  
+  background: #ffffff url("../img/_bg-main-wrapper-s.jpg") no-repeat center top;
 }
 
 @media (min-width: 768px) {
@@ -757,8 +764,17 @@ body {
     flex-wrap: wrap;
     box-sizing: border-box;
     margin: 0 auto;
+    padding-top: 32px;
     width: 768px;
+    
     justify-content: space-between;
+  }
+  
+  .start-page .main-wrapper {
+    padding-top: 32px;
+    
+    background: none;
+    background-color: rgba(255,255,255,1.0);
   }
 }
 
