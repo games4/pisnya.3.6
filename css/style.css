@@ -183,7 +183,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 748px;
+    /* width: 748px; */
+    width: 768px;
     
     box-shadow: none;
     box-shadow: 0 7px 5px -5px rgba(0,0,0,0.5);
@@ -191,14 +192,16 @@ body {
   
   .page-header__banner {
     margin: 0 auto;
-    width: 748px;
+    /* width: 748px; */
+    width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
   .page-header__top,
   .page-header__banner {
-    width: 990px;
+    /* width: 990px; */
+    width: 1010px;
   }
 }
 
