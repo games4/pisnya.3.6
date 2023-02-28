@@ -150,7 +150,7 @@ body {
 
 .page-header {
   margin: 0;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   padding: 0;
   
   color: rgba(255,255,255,1.0);
@@ -175,8 +175,8 @@ body {
 
 @media (min-width: 768px) {
   .page-header {
-    /* margin-bottom: 40px; */
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
+    /* padding-bottom: 32px; */
   }
   
   .page-header__top {
